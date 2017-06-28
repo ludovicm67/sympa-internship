@@ -3,7 +3,7 @@
 % Mercredi 28 juin 2017
 
 
-# Introduction 
+# Introduction 
 
 Ce stage sur `sympa-vue` du 22 mai au 30 juin 2017 fait suite à la participation au Hackathon pour les vingt ans de Sympa, qui a eu lieu le 1er et 2 avril 2017 auquel j’ai pu participer sur la partie frontend.
 
@@ -58,7 +58,7 @@ Contraintes fixées lors de ce Hackathon pour l’UI :
 
 \newpage
 
-# Semaines 2 & 3 (du 29 mai au 9 juin)
+# Semaines 2 & 3 (du 29 mai au 9 juin)
 
 Après discussion avec sandhose, il s’est avéré que la technologie que l’on utilisait pour le front `vue-material` rencontrait des soucis de performances.
 
@@ -114,11 +114,11 @@ Debian Stretch, ou Debian 9, venait de sortir; j’ai donc choisis de formater c
 
 Un grand nombre de  serveurs tournent actuellement sur Debian, du coup je me suis dit que si j’arrivais à faire tourner un Sympa sur ma machine en local, mes changements ne devrait pas poser de problèmes au autres machines. C’est aussi à ce moment là qu’on a décidé avec la communauté d’essayer d’intégrer certains composants que j’ai développé pour Sympa 7 dans l’interface actuelle de Sympa, dans le but d’avoir du feedback principalement, et également pour que le backend puisse voir vers quoi est-ce que l’on aura vraiment besoin comme données pour la suite.
 
-## Pourquoi passer à `vim` ?
+## Pourquoi passer à `vim` ?
 
 Sur la majorité des serveurs, `vi` ou `vim` est déjà installé; du coup prendre de bonnes habitudes avec `vim` dès à présent ne peut ne m’être que profitable !
 
-## L'installation de `sympa`
+## L'installation de `sympa`
 
 J’ai donc cherché à installer Sympa sur ma machine en local.
 J’ai tout d’abord tenté d’installer Sympa depuis les dépôts Debian avec un `apt install sympa`; après avoir installé quelques dépendances manquantes et un peu de configuration (notamment du serveur nginx), je suis parvenu à avoir une instance de Sympa à peu près fonctionnelle en locale.
