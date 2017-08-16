@@ -8,29 +8,31 @@
 
     - etc...
 
- - Ecriture d’un peu de documentation :
+ - Ecriture d’un peu de documentation 
+ (https://github.com/ludovicm67/sympa-internship/tree/master/docs) :
 
     - Mise en place d’un mailserver avec James *(a nécessité de contacter 
     directement les développeurs du projet afin de faire en sorte de 
     trouver un moyen de faire tourner James avec un support du protocole 
     JMAP)*:
 
-        - Comment l’installer
+        - Comment l’installer ?
 
-        - Comment ajouter un utilisateur
+        - Comment ajouter un utilisateur ?
 
-        - Comment se connecter avec Thunderbird au serveur de mails des différents utilisateurs
+        - Comment se connecter avec Thunderbird au serveur de mails des 
+        différents utilisateurs, pour tester JMAP ?
 
-    - Fonctionnement de JMAP (explication de certaines parties non ou 
-    très peu documentées sur jmap.io)
+    - Fonctionnement de JMAP (explication de la partie d'authentification 
+    principalement) :
 
-        - Comment avoir un `continuationToken`
+        - Comment avoir un `continuationToken` ?
 
-        - Comment avoir un `accessToken`
+        - Comment avoir un `accessToken` ?
 
-        - Comment récupérer les différents endpoints
+        - Comment récupérer les différents endpoints ?
 
-        - Comment révoquer un token
+        - Comment révoquer un token ?
 
  - Implémentation d’un accès à un serveur JMAP depuis l’interface web 
  (servira à terme à afficher les archives pour remplacer MHonArc)
