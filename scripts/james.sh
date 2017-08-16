@@ -11,4 +11,4 @@ done
 
 echo "$CONTENT" \
  | sed 's/\.\.\/\.\.\/images\//\.\/images\//g' \
- | pandoc -V geometry:margin=1in -o doc_james.pdf
+ | pandoc -V geometry:margin=1.5cm -o doc_james.pdf

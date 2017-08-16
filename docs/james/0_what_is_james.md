@@ -1,8 +1,10 @@
 # What is James?
 
-Apache James, for Java Apache Mail Entreprise Server, is an open source mailserver written in Java.
+Apache James, for **J**ava **A**pache **M**ail **E**ntreprise **S**erver 
+is an open source mailserver written in Java.
 
-I decided to use James for my tests because it includes all the needed stuff to start to play with the JMAP protocol directly.
+I decided to use James for my tests because it includes all the needed 
+stuff to start to play with the JMAP protocol directly.
 
 More informations:
 
