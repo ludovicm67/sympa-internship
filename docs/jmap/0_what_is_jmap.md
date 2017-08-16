@@ -10,10 +10,10 @@ From http://jmap.io/ :
 > extended with contacts, calendars in the future (replacing 
 > CardDAV/CalDAV). It does not replace MTA-to-MTA SMTP transmission.
 
-It's a new protocol that was built to replace IMAP. It's easier to 
-developper to work with it, because it returns directly datas on the JSON 
-format. It was also designed to make much more efficient use of network 
-ressources and integrates some interesting features, like the push 
-mechanism, which brings immediates updates for each folders, which isn't 
-possible with IMAP (only one folder, and requires persistent network 
-connection).
+It's a new protocol that was built to replace IMAP. It's easier for 
+developpers to work with it, because it returns directly datas on the 
+JSON format. It was also designed to make much more efficient use of 
+network ressources and integrates some interesting features, like the 
+push mechanism, which brings immediates updates for each folders, which 
+isn't possible with IMAP (only one folder, and requires persistent 
+network connection).
