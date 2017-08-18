@@ -88,15 +88,14 @@ s'authentifier avec JMAP, notamment pour les points suivants :
 
   - Comment révoquer un token ?
 
-
-### Utiliser JMAP avec Apache James
+### Apache James
 
 Maintenant que j'avais les informations théorique nécessaires, j'ai 
 souhaité construire un petit client dans l'interface de Sympa pour mettre 
 en pratique le système d'authentification et essayer de récupérer 
 quelques données. J'avais donc besoin de trouver quelque chose qui puisse 
 être capable de me fournir un *endpoint* sur lequel je pouvais effectuer 
-des requêtes. Ce fût assez difficile ) trouver, mais j'ai finis par 
+des requêtes. Ce fût assez difficile à trouver, mais j'ai finis par 
 tomber sur [`Apache James`](https://james.apache.org/). Cependant en 
 suivant les instructions sur leur site, je n'étais pas en mesure de faire 
 fonctionner JMAP, alors que sur leur page d'accueil ils annonçaient 
@@ -107,19 +106,6 @@ et j'ai donc également chosis de documenter les étapes nécessaires pour
 montrer les étapes à suivre pour l'installer avec le support de JMAP, 
 comment ajouter un utilisateur, et comment se connecter avec Thunderbird 
 avec cet utilisateur, pour tester le bon fonctionnement de James.
-
-### Création du client
-
-J'ai donc créé un client JMAP avec JavaScript dans le but de contacter un 
-serveur mail, pour mes tests il s'agissait d'Apache James que je venais 
-de mettre en place. Tout fonctionne à merveille, la connexion, le listing 
-des différentes boites mails, les indicateurs de mails non lus, ...
-
-J'étais satisfait de mon travail, et je pense qu'il sera fortement utile 
-pour la suite, lorsque l'on pourra directement effectuer une requête sur 
-un *endpoint* exposé par le backend, au lieu de passer par Apache James, 
-qui ne m'étais utile que pour tester le bon fonctionnement de mon 
-mini-client.
 
 ### Emplacement de la documentation
 
@@ -135,3 +121,36 @@ Dans ce dépot se trouve également mon *diary*, document dans lequel
 j'écrivais ce que je faisais chaque semaine, histoire d'avoir une trace 
 chronologique de mon travail, et faciliter la rédaction de ce rapport, 
 qui lui-même se trouve également à cet endroit.
+
+## Création du client JMAP
+
+J'ai donc créé un client JMAP avec JavaScript dans le but de contacter un 
+serveur mail, pour mes tests il s'agissait d'Apache James que je venais 
+de mettre en place. Tout fonctionne à merveille, la connexion, le listing 
+des différentes boites mails, les indicateurs de mails non lus, ...
+
+J'étais satisfait de mon travail, et je pense qu'il sera fortement utile 
+pour la suite, lorsque l'on pourra directement effectuer une requête sur 
+un *endpoint* exposé par le backend, au lieu de passer par Apache James, 
+qui ne m'étais utile que pour tester le bon fonctionnement de mon 
+mini-client.
+
+## Le composant `Datasources`
+
+Comme je le disais avant, avec VueJS on aime bien travailler avec des composants, qui sont réutilisables.
+
+Avec la communauté de Sympa, on s'est dit qu'il serait intéressant de voir si je pouvais déjà essayer d'intégrer un des composant de la nouvelle interface de Sympa dans la version actuelle, dans le but d'avoir des retours de la part des utilisateurs, pour voir si cela leur convient, et pour les préparer petit à petit à la nouvelle interface. Pour cela il fallait choisir un composant qui n'avait pas besoin de stocker de données et d'intéragir beaucoup avec le serveur; le choix s'est donc porté sur composant `Datasources`. Ce composant permet de choisir rapidement les sources de données pour les listes, par exemple il est possible de dire *tous les utilisateurs de cette base de données doivent être automatiquement inscrit à telle liste de diffusion*.
+
+J'ai donc créé dans un premier temps une branche [`datasources`](https://github.com/sympa-community/sympa-vue/tree/datasources) dans la partie front, dans le but d'avancer au maximum sur ce composant dans la nouvelle version de Sympa.
+
+![Le composant Datasources dans la nouvelle interface de Sympa](../images/screenshots/datasources.png)
+
+J'ai ensuite créé une nouvelle branche dans le dépôt du logiciel en lui-même, [`feat-ui-datasources`](https://github.com/sympa-community/sympa/tree/feat-ui-datasources), dans laquelle j'ai fais en sorte d'intégrer le composant VueJS des sources de données dans l'interface actuelle.
+
+J'ai donc dans un premier temps dû analyser le code source, pour repérer où se trouver les fichiers de template, et voir comment est-ce que le tout fonctionnait. J'ai pu voir qu'il s'agissait de templates au format `tt2`, j'ai donc dû me documenter pour trouver comment est-ce que ce langage de template fonctionne, ce qui n'était pas spécialement compliqué.
+
+Cependant pour tester ce que je faisais, j'avais besoin de travailler sur une instance de Sympa basée sur les sources en développement, car les versions packagées actuellement sur les distributions n'est pas suffisament à jour pour que je puisse travailler dessus. En effet, les fichiers de templates ont étés complètement retravaillés entre-temps. J'ai eu quelques difficultés à installer Sympa depuis les sources, car je rencontrais certains soucis de dépendances, mais au final j'ai installé en parallèle la version packagée, et fait en sorte de faire pointer le serveur web vers les sources directement, ce qui a parfaitement fontionné.
+
+J'ai donc pu travailler sur les fichiers de templates et tester directement en local ce que ça donnait. Cependant j'avais un peu de mal à me repérer au départ, car il y a un grand nombre de variables utilisées, et je n'arrivais pas à afficher le contenu de certaines variables pour els inspecter. J'ai donc demandé à la communauté de Sympa depuis le salon IRC, et on m'a dit qu'il était possible d'afficher le contenu des variables en activant un paramètre un peu caché quelque part dans les menus. J'ai donc pu comprendre la logique, et construire le composant des sources de données dans la version actuelle de Sympa, ce qui permet au final à l'utilisateur de beaucoup mieux s'y retrouver, car avant il s'agissait une longue page remplie de champs de formulaires à compléter qui était très longue et très austère, avec des champs de selections qui contenaient énormément d'éléments; désormais on a un menu qui récapitule les différentes sources disponibles, que l'on peut facilement trouver pour les éditer, la création d'une source de données est également nettement plus agréable.
+
+![Le composant Datasources dans l'interface actuelle de Sympa](../images/screenshots/datasources_imported.png)
