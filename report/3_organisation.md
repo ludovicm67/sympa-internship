@@ -78,3 +78,16 @@ est déployé sur `http://sympa-vue.surge.sh/` avec l'aide de
 [`surge.sh`](http://surge.sh/). Cependant lors d'un grand changement de 
 technologie pour le frontend, j'ai décidé de travailler sur d'autres
 branches.
+
+### VueJS
+
+[`VueJS`](https://vuejs.org/) est un framework JavaScript opensource, qui 
+se veut accessible, polyvalent et performant, qui a été créé pour 
+organiser et simplifier le développement web. Le fait de travailler avec 
+différents composants permet de bien découper la logique, ce qui offre un 
+avantage quand à la lisibilité du code et favorise la ré-utilisation de 
+ces derniers. La gestion du routing est plutôt simple, et, concernant les 
+performances, le fait de ne recharger seulement les éléments qui changent 
+en fonction d'un état à un autre est vraiment quelque chose qui offre un 
+gain en terme de confort d'utilisation. C'est donc la raison pour 
+laquelle lors du Hackathon nous avions décidés de choisir ce framework.

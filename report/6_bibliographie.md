@@ -1,5 +1,3 @@
-<!-- figures -->
-
 # Bibliographie
 
   * À propos de RENATER :
