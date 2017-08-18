@@ -1,3 +1,5 @@
+[comment]: # figures
+
 # Bibliographie
 
   * À propos de RENATER :
@@ -56,3 +58,6 @@
       (site web de Travis CI, un logiciel d'intégration continu utilisé)
     - `http://surge.sh/`
       (site web de Surge.sh, utilisé pour les déploiements sur `master`)
+    - `https://james.apache.org/`
+      (site web d'Apache James, le serveur mail que j'ai utilisé pour 
+      tester JMAP)
