@@ -1,9 +1,9 @@
 #!/bin/sh
 
 DIR="$(pwd)/report/"
-FILES="${DIR}*.md"
+FILES="${DIR}*_*.md"
 
-CONTENT="$(cat ${DIR}headers.txt)\n"
+CONTENT=""
 
 for FILE in $FILES; do
   CONTENT="${CONTENT}\n\n$(cat $FILE)\n"
