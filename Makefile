@@ -3,6 +3,7 @@ SCRIPTS = $(wildcard scripts/*.sh)
 DIARY_FILES = $(wildcard diary/*_*.md)
 JAMES_FILES = $(wildcard docs/james/*)
 JMAP_FILES = $(wildcard docs/jmap/*)
+REPORT_FILES = $(wildcard report/*)
 
 # Build all targets (default)
 .PHONY: all
@@ -18,6 +19,9 @@ doc_james.pdf: $(JAMES_FILES)
 doc_jmap.pdf: $(JMAP_FILES)
 	@./scripts/jmap.sh
 
+report.pdf: $(REPORT_FILES)
+	@./scripts/report.sh
+
 # Targets to call manually
 .PHONY: diary
 diary: diary.pdf
@@ -31,8 +35,11 @@ jmap: doc_jmap.pdf
 .PHONY: doc
 doc: james jmap
 
+.PHONY: report
+report: report.pdf
+
 .PHONY: pdf
-pdf: diary doc
+pdf: diary doc report
 
 # if needed...
 .PHONY: exec
