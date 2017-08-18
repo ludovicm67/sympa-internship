@@ -1,7 +1,7 @@
 # Sympa internship
 
 To build all the pdf files, just run `make`, `make all` or `make pdf`.
-You will need to have `pandoc` installed on your machine.
+You will need to have `pandoc` and `pdftk` installed on your machine.
 
 ## DIARY
 
@@ -32,7 +32,8 @@ give you the ressources you need to query what you want.
 ## Report
 
 I had to write an intership report in French, so to build it just run 
-`make report` if you don't already have the file `report.pdf`.
+`make report` if you don't already have the file `report.pdf` (requires 
+`pdftk`).
 
 # To conclude
 
