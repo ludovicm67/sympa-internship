@@ -29,3 +29,15 @@ file. You can also read directly what it on the `docs/jmap/` folder.
 This documentation will explain you the authentication part for JMAP and 
 give you the ressources you need to query what you want.
 
+## Report
+
+I had to write an intership report in French, so to build it just run 
+`make report` if you don't already have the file `report.pdf`.
+
+# To conclude
+
+I hope you enjoyed my work!
+Feel free to correct if you see some typos or errors.
+This intership made me discover the opensource world, and working with 
+such a great community is something very cool!
+I'm happy to be part of the community from now :smile:
