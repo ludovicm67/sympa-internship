@@ -24,6 +24,6 @@ rassemblant ainsi une partie de la communauté, que je remercie également
 au passage, durant deux jours afin de discuter du futur du projet, et que 
 mon stage a pu se réaliser.
 
-Un immense merci encore à Quentin <span style="font-variant: 
-small-caps">Gliech</span>, pour m'avoir fait découvrir Sympa et pour ses 
-maquettes, sa disponibilité et ses conseils.
+Un immense merci encore à Quentin 
+<span style="font-variant: small-caps">Gliech</span>, pour m'avoir fait 
+découvrir Sympa et pour ses maquettes, sa disponibilité et ses conseils.
