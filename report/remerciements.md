@@ -2,7 +2,7 @@
 
 Je tiens tout d'abord à remercier RENATER pour m'avoir pris en tant que 
 stagiaire pour travailler sur Sympa. Cela a été une véritable opportunité 
-pour moi de contribuer à un projet opensource.
+pour moi de contribuer à un projet *open source*.
 
 Merci à Stéphane <span style="font-variant: small-caps">Cateloin</span> 
 et Laurent <span style="font-variant: small-caps">Gydé</span>, mes deux 

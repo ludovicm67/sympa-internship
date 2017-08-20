@@ -81,8 +81,8 @@ branches.
 
 ### VueJS
 
-[`VueJS`](https://vuejs.org/) est un framework JavaScript opensource, qui 
-se veut accessible, polyvalent et performant, qui a été créé pour 
+[`VueJS`](https://vuejs.org/) est un framework JavaScript *open source*, 
+qui se veut accessible, polyvalent et performant, qui a été créé pour 
 organiser et simplifier le développement web. Le fait de travailler avec 
 différents composants permet de bien découper la logique, ce qui offre un 
 avantage quand à la lisibilité du code et favorise la ré-utilisation de 

@@ -41,6 +41,10 @@ report: report.pdf
 .PHONY: pdf
 pdf: diary doc report
 
+.PHONY: clean
+clean:
+	rm -f ./*.pdf
+
 # if needed...
 .PHONY: exec
 exec:

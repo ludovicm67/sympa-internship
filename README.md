@@ -1,7 +1,9 @@
 # Sympa internship
 
 To build all the pdf files, just run `make`, `make all` or `make pdf`.
-You will need to have `pandoc` and `pdftk` installed on your machine.
+You will need to have `pandoc` for all pdf files, and `pdftk` and 
+`xelatex` (installable on Debian-based distributions with `sudo apt 
+install texlive-xetex`) installed on your machine.
 
 ## DIARY
 
@@ -32,13 +34,12 @@ give you the ressources you need to query what you want.
 ## Report
 
 I had to write an intership report in French, so to build it just run 
-`make report` if you don't already have the file `report.pdf` (requires 
-`pdftk`).
+`make report` if you don't already have the file `report.pdf`.
 
 # To conclude
 
 I hope you enjoyed my work!
 Feel free to correct if you see some typos or errors.
-This intership made me discover the opensource world, and working with 
+This intership made me discover the open source world, and working with 
 such a great community is something very cool!
 I'm happy to be part of the community from now :smile:
