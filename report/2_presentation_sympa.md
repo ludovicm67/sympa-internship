@@ -1,16 +1,16 @@
-# Présentation du lociciel Sympa
+# Présentation du logiciel Sympa
 
 ![Logo de Sympa](../images/logos/sympa.png)
 
 Sympa (Système de Multi-Postage Automatique) est un gestionnaire de 
 listes électroniques libre (diffusé sous licence 
 [GPL](https://www.gnu.org/copyleft/gpl.html)) écrit en Perl développé 
-sous la responsabilité de RENATER. La permière version est sortie le 
+sous la responsabilité de RENATER. La première version est sortie le 
 premier avril 1997. Il permet d'automatiser les fonctions de gestions des 
 listes telles que les abonnements, la modération et la gestion des 
 archives, et propose une interface web complète pour gérer les listes.
 
-Sympa est utilisé par la grande majorité des établisssements 
+Sympa est utilisé par la grande majorité des établissements 
 d'enseignement supérieur et de recherche français, et est également très 
 largement utilisé dans les milieux académiques internationaux tout comme 
 par de nombreuses organisations (NASA, Unesco, ...), des ministères 
@@ -18,7 +18,7 @@ par de nombreuses organisations (NASA, Unesco, ...), des ministères
 hébergeurs.
 
 Les sources sont actuellement disponibles sur le dépôt GitHub suivant :
-`https://github.com/sympa-community/sympa` .
+`https://github.com/sympa-community/sympa`.
 
 ![Page d'accueil de Sympa](../images/screenshots/sympa-welcome.png)
 
