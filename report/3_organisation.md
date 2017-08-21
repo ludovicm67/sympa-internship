@@ -4,24 +4,24 @@
 
 J'ai effectué mon stage chez RENATER.
 Le groupement d'intérêt public Réseau National de télécommunications pour 
-la Technlogie l'Enseignement et la Recherche, créé en 1993, est le réseau 
+la Technologie l'Enseignement et la Recherche, créé en 1993, est le réseau 
 informatique français qui relie les différentes universités et les 
 différents centres de recherches entre eux.
 RENATER propose un certain nombre de services, –réseaux et applicatifs 
-notament–, dont ce dernier contient Sympa.
+notamment–, dont ce dernier contient Sympa.
 
 Cependant, pour des soucis pratiques, j'ai effectué mon stage dans les 
 locaux du département informatique de l'Université de Strasbourg, qui 
-étaient organisés sous forme d'open-space, ainsi que depuis chez moi de 
+étaient organisés sous forme d'open space, ainsi que depuis chez moi de 
 temps en temps. En effet, vu que je travaillais en totale autonomie, cela 
-ne posais pas de problème.
+ne posait pas de problème.
 
 ## Objectifs du stage
 
 Ma mission principale de mon stage était d'intégrer [`les maquettes 
-réalisées par Quentin Gliech`](https://s.sandhose.fr/sympa/spec/) dans le 
-projet, c'est-à-dire réaliser le design de sorte à ce qu'il ressemble le 
-plus possible aux spécifications fournies.
+réalisées par Quentin`](https://s.sandhose.fr/sympa/spec/) dans le projet,
+c'est-à-dire réaliser le design de sorte à ce qu'il ressemble le plus 
+possible aux spécifications fournies.
 
 Je devais également me renseigner sur le protocole JMAP, le protocole que 
 l'on utilisera par la suite pour exposer les archives des listes de 
@@ -31,7 +31,7 @@ diffusion dans l'interface web.
 
 J'ai choisis de travailler sur mon ordinateur personnel durant ce stage, 
 car j'avais déjà tout le nécessaire qui était en place. J'ai cependant 
-choisis, au cours de mon stage de passer de la distrubition Ubuntu à une 
+choisis, au cours de mon stage de passer de la distribution Ubuntu à une 
 distribution Debian, dans le but d'assurer la compatibilité de mes 
 travaux avec le plus grand nombre de machines possible.
 
@@ -59,13 +59,13 @@ L'environnement de développement tourne dans un environnement NodeJS.
 reload*, ce qui nous permet de voir les modifications en direct du front 
 lorsque l'on développe.
 
-Pour assurer une certaine cohérence dans la manière de coder, le linter 
+Pour assurer une certaine cohérence dans la manière de coder, le *linter* 
 JavaScript [`ESLint`](https://eslint.org/) est utilisé.
 
-Pour utiliser dès maintenant les nouveaux standards JavaScript, notament 
-l'ECMAScript® 2015, [`Babel`](https://babeljs.io/) est utlisé, ce qui 
-permet de transpiler le code et le rendre compatible avec les anciens 
-navigateurs ne supportant pas encore ces nouveaux standards.
+Pour utiliser dès maintenant les nouveaux standards JavaScript, notamment 
+l'ECMAScript® 2015, [`Babel`](https://babeljs.io/) est utilisé, ce qui 
+permet de *transpiler*, ou traduire, le code et le rendre compatible avec 
+les anciens navigateurs ne supportant pas encore ces nouveaux standards.
 
 ### L'intégration continue
 
@@ -73,21 +73,23 @@ Pour l'intégration continue, [`Travis CI`](https://travis-ci.org/) était
 utilisé. Du coup à chaque fois que l'on push quelque chose sur le dépôt, 
 ça va exécuter les tests, et voir si tout fonctionne correctement.
 
-Lors d'un push sur la branche `master`, et que le tests réussi, le code 
-est déployé sur `http://sympa-vue.surge.sh/` avec l'aide de 
-[`surge.sh`](http://surge.sh/). Cependant lors d'un grand changement de 
-technologie pour le frontend, j'ai décidé de travailler sur d'autres
-branches.
+Lors d'un push sur la branche `master`, et que les tests réussissent, le 
+code est déployé sur `http://sympa-vue.surge.sh/` avec l'aide de 
+[`surge.sh`](http://surge.sh/), dans le but de pouvoir montrer à d'autres 
+personnes de la communautée comment l'interface évolue. Cependant lors 
+d'un grand changement de technologie pour le *front-end*, j'ai décidé de 
+travailler sur d'autres branches; une partie de mes modifications ne sont 
+donc pas encore déployées.
 
 ### VueJS
 
-[`VueJS`](https://vuejs.org/) est un framework JavaScript *open source*, 
+[`VueJS`](https://vuejs.org/) est un *framework* JavaScript *open source*, 
 qui se veut accessible, polyvalent et performant, qui a été créé pour 
 organiser et simplifier le développement web. Le fait de travailler avec 
 différents composants permet de bien découper la logique, ce qui offre un 
-avantage quand à la lisibilité du code et favorise la ré-utilisation de 
-ces derniers. La gestion du routing est plutôt simple, et, concernant les 
+avantage quant à la lisibilité du code et favorise la réutilisation de 
+ces derniers. La gestion du *routing* est plutôt simple, et, concernant les 
 performances, le fait de ne recharger seulement les éléments qui changent 
 en fonction d'un état à un autre est vraiment quelque chose qui offre un 
-gain en terme de confort d'utilisation. C'est donc la raison pour 
-laquelle lors du Hackathon nous avions décidés de choisir ce framework.
+gain en termes de confort d'utilisation. C'est donc la raison pour 
+laquelle lors du hackathon nous avions décidés de choisir ce *framework*.
