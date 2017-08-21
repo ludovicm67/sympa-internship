@@ -6,7 +6,7 @@
 
     - améliorations du layout du composant Discussion
 
-    - etc...
+    - etc…
 
  - Ecriture d’un peu de documentation 
  (https://github.com/ludovicm67/sympa-internship/tree/master/docs) :

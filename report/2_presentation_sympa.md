@@ -13,8 +13,8 @@ archives, et propose une interface web complète pour gérer les listes.
 Sympa est utilisé par la grande majorité des établissements 
 d'enseignement supérieur et de recherche français, et est également très 
 largement utilisé dans les milieux académiques internationaux tout comme 
-par de nombreuses organisations (NASA, Unesco, ...), des ministères 
-(affaires étrangères, culture, défense, finances, ...) et certains 
+par de nombreuses organisations (NASA, Unesco,…), des ministères 
+(affaires étrangères, culture, défense, finances,…) et certains 
 hébergeurs.
 
 Les sources sont actuellement disponibles sur le dépôt GitHub suivant :

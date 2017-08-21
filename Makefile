@@ -45,7 +45,7 @@ pdf: diary doc report
 clean:
 	rm -f ./*.pdf
 
-# if needed...
+# if needed…
 .PHONY: exec
 exec:
 	chmod +x $(SCRIPTS)
