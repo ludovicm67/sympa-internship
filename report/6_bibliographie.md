@@ -16,14 +16,14 @@
     - `https://fr.wikipedia.org/wiki/Sympa_(informatique)`
       (page Wikipédia de Sympa)
 
-  * Dépots GitHub de Sympa sur lesquels j'ai pu travailler :
+  * Dépôts GitHub de Sympa sur lesquels j'ai pu travailler :
     - `https://github.com/sympa-community/sympa`
       (le dépôt principal)
     - `https://github.com/sympa-community/sympa/tree/feat-ui-datasources`
-      (la branche que j'ai créé pour ajouter le nouveau composant dans la 
+      (la branche que j'ai créée pour ajouter le nouveau composant dans la 
       version actuelle)
     - `https://github.com/sympa-community/sympa-vue`
-      (le dépôt du frontend de la future version de Sympa)
+      (le dépôt du *front-end* de la future version de Sympa)
     - `https://github.com/sympa-community/sympa-vue/tree/mdl`
       (la branche créée pour passer de `vue-material` à `mdl`)
     - `https://github.com/sympa-community/sympa-vue/tree/datasources`
