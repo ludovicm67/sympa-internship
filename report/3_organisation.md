@@ -76,7 +76,7 @@ utilisé. Du coup à chaque fois que l'on push quelque chose sur le dépôt,
 Lors d'un push sur la branche `master`, et que les tests réussissent, le 
 code est déployé sur `http://sympa-vue.surge.sh/` avec l'aide de 
 [`surge.sh`](http://surge.sh/), dans le but de pouvoir montrer à d'autres 
-personnes de la communautée comment l'interface évolue. Cependant lors 
+personnes de la communauté comment l'interface évolue. Cependant lors 
 d'un grand changement de technologie pour le *front-end*, j'ai décidé de 
 travailler sur d'autres branches; une partie de mes modifications ne sont 
 donc pas encore déployées.
