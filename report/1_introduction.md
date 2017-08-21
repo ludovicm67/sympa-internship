@@ -29,7 +29,7 @@ C'était également l'occasion de définir les contraintes pour la nouvelle
 version de Sympa. Pour la partie *front-end* :
 
   - **Utiliser VueJS :** avantage du fonctionnement par composants, 
-  gestion du routing assez simple, performances (ne change que ce qui 
+  gestion du *routing* assez simple, performances (ne change que ce qui 
   doit être changé), …
 
   - **Utiliser le *Material design*^[Ensemble de règles de design 
