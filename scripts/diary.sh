@@ -10,4 +10,4 @@ for FILE in $FILES; do
   CONTENT="${CONTENT}$(cat $FILE)\n\n$NEWPAGE\n\n"
 done
 
-echo "$CONTENT" | head -n -3 | pandoc -o diary.pdf
+echo "$CONTENT" | head -n -3 | pandoc -S -o diary.pdf

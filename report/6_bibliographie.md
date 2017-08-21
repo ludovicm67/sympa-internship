@@ -35,7 +35,7 @@
     - `https://fr.wikipedia.org/wiki/Git`
       (page Wikipédia de `git`)
     - `http://www.ecma-international.org/ecma-262/6.0/`
-      (page de spécifications de l'ECMAScript® 2015)
+      (page de spécifications de l'ECMAScript 2015)
     - `https://nodejs.org/`
       (site web de NodeJS)
     - `https://vuejs.org/`

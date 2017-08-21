@@ -10,5 +10,5 @@ for FILE in $FILES; do
 done
 
 echo "$CONTENT" \
- | pandoc --listings -H ${DIR}listings-setup.tex --toc \
+ | pandoc -S --listings -H ${DIR}listings-setup.tex --toc \
    -V geometry:margin=1.5cm -o doc_jmap.pdf

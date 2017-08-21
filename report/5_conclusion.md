@@ -7,7 +7,7 @@ d'intéressant. De plus le travail en autonomie favorise véritablement
 l'esprit de créativité et les prises d'initiatives.
 
 C'était également pour moi l'occasion de me familiariser avec le 
-*framework* JavaScript VueJS et de me mettre véritablement à l'ECMAScript® 
+*framework* JavaScript VueJS et de me mettre véritablement à l'ECMAScript 
 2015 ou plus.
 
 Pour conclure, je dirais que ce stage m'a donné envie de m'investir 

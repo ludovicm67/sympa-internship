@@ -55,15 +55,17 @@ sur ce dépôt que j'ai principalement travaillé durant mon stage.
 ### L'environnement de développement
 
 L'environnement de développement tourne dans un environnement NodeJS. 
-[`Webpack`](https://webpack.js.org/) est utilisé pour permettre le *hot 
-reload*, ce qui nous permet de voir les modifications en direct du front 
-lorsque l'on développe.
+[`Webpack`](https://webpack.js.org/) est le *bundler* que l'on utilise. 
+Avec l'aide de certains modules, il permet de générer les différents 
+*assets* statiques, comme le JavaScript et le CSS par exemple. Il est 
+également utilisé pour permettre le *hot reload*, ce qui nous permet de 
+voir les modifications en direct du *front* lorsque l'on développe.
 
 Pour assurer une certaine cohérence dans la manière de coder, le *linter* 
 JavaScript [`ESLint`](https://eslint.org/) est utilisé.
 
 Pour utiliser dès maintenant les nouveaux standards JavaScript, notamment 
-l'ECMAScript® 2015, [`Babel`](https://babeljs.io/) est utilisé, ce qui 
+l'ECMAScript 2015, [`Babel`](https://babeljs.io/) est utilisé, ce qui 
 permet de *transpiler*, ou traduire, le code et le rendre compatible avec 
 les anciens navigateurs ne supportant pas encore ces nouveaux standards.
 
