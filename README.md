@@ -1,9 +1,18 @@
 # Sympa internship
 
-To build all the pdf files, just run `make`, `make all` or `make pdf`.
-You will need to have `pandoc` for all pdf files, and `pdftk` and 
-`xelatex` (installable on Debian-based distributions with `sudo apt 
-install texlive-xetex`) installed on your machine.
+Here you will find all the stuff about my six weeks internship on Sympa:
+
+  - My diary: I've written what I did week for week during my internship.
+
+  - Documentation:
+
+    - Apache James: I've decided to write some documentation about Apache
+                    James, because I used it for playground for testing JMAP.
+
+    - JMAP: a new protocol to replace IMAP. Very interesting. I decided to 
+            write a small documentation about how to authenticate.
+
+  - Report: my report I needed to write for the university.
 
 ## Compiled versions
 
@@ -21,41 +30,38 @@ install texlive-xetex`) installed on your machine.
   - Report (fr):
     https://stage.ludovic-muller.fr/sympa/report.pdf
 
-## DIARY
+## Build requirements
 
-To build the pdf, just run `make diary`.
+To build all the pdf files you will need the following dependencies
+installed on your machine :
 
-I've written in the diary what I did week for week (in French) during 
-my six weeks internship.
+  - `pandoc`: used here to convert all the Markdown files to pdf
 
-## Documentation
+  - `texlive-lang-french`: support for the french langage
 
-### Apache James
+  - `pdftk`: used for the *report* only, to merge multiple pdf
+             files without breaking links
 
-To build the pdf, run `make james`. It will create the `doc_james.pdf` 
-file. You can also read directly what it on the `docs/james/` folder.
+  - `xelatex`: installable on Debian-based distributions with
+               `sudo apt install texlive-xetex`
+               (used for compiling the cover page from *tex->pdf*)
 
-This documentation will present you quickly what is James, and how to get 
-started and setup in a easy way using `docker-compose` to have a 
-playground for JMAP.
+To build all pdf files, just run `make`, `make all` or `make pdf`.
 
-### JMAP
-
-To build the pdf, run `make jmap`. It will create the `doc_jmap.pdf` 
-file. You can also read directly what it on the `docs/jmap/` folder.
-
-This documentation will explain you the authentication part for JMAP and 
-give you the ressources you need to query what you want.
-
-## Report
-
-I had to write an intership report in French, so to build it just run 
-`make report` if you don't already have the file `report.pdf`.
+If you only want to build a specific file:
+  - `make diary`: generate the file *diary.pdf* which contains my diary.
+  - `make james`: generate the file *doc_james.pdf* wich contains the
+                  documentation I've written for Apache James.
+  - `make jmap`: generate the file *doc_jmap.pdf* which contains the
+                 documentation I've written for the authentication part
+                 for JMAP.
+  - `make report`: generate the file *report.pdf* which contains my report.
 
 # To conclude
 
 I hope you enjoyed my work!
 Feel free to correct if you see some typos or errors.
-This intership made me discover the open source world, and working with 
+This intership made me discover the open source world, and working with
 such a great community is something very cool!
 I'm happy to be part of the community from now :smile:
+
