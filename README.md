@@ -5,6 +5,22 @@ You will need to have `pandoc` for all pdf files, and `pdftk` and
 `xelatex` (installable on Debian-based distributions with `sudo apt 
 install texlive-xetex`) installed on your machine.
 
+## Compiled versions
+
+  - DIARY (fr):
+    https://stage.ludovic-muller.fr/sympa/diary.pdf
+
+  - Documentation (en):
+
+    - Apache James:
+      https://stage.ludovic-muller.fr/sympa/doc_james.pdf
+
+    - JMAP:
+      https://stage.ludovic-muller.fr/sympa/doc_jmap.pdf
+
+  - Report (fr):
+    https://stage.ludovic-muller.fr/sympa/report.pdf
+
 ## DIARY
 
 To build the pdf, just run `make diary`.
