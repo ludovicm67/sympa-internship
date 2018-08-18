@@ -28,11 +28,11 @@ echo "${CONTENT}\n\n\listoffigures\n" \
     -V lang=fr -V fontsize=12pt -V documentclass=report
 
 # merge all needed pdf files
-pdftk \
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dAutoRotatePages=/None \
+  -sOutputFile=report.pdf \
   .report-cover.pdf \
   .report-thx.pdf \
-  .report-content.pdf \
-  cat output report.pdf
+  .report-content.pdf
 
 # clean temp files
 rm -f .report-*.pdf texput* *.tex

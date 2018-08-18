@@ -39,9 +39,6 @@ installed on your machine :
 
   - `texlive-lang-french`: support for the french langage
 
-  - `pdftk`: used for the *report* only, to merge multiple pdf
-             files without breaking links
-
   - `xelatex`: installable on Debian-based distributions with
                `sudo apt install texlive-xetex`
                (used for compiling the cover page from *tex->pdf*)
